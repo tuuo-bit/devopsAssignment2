@@ -1,4 +1,11 @@
-import itertools
+class spellathon:
+	def __init__( s, word_list_file):
+		s.word_list = word_list_file.readlines()
+		s.res = { 4: None, 5: None, 6: None, 7: None}
+	def take_input( s):
+		s.rest, s.centre = map( str, input().split(' '))			
+	def generate_words( s, file):
+		return words	
 
 #functions
 def script():
