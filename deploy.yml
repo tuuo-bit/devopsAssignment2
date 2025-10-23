@@ -1,14 +1,10 @@
 apiVersion: v1
 kind: Pod
 metadata:
-  name: spellathon-pod
-  labels:
-    app: spellathon
+  name: pod6
 spec:
   containers:
-    - name: spellathon-container
-      image: your-dockerhub-username/spellathon:latest   # replace with your image name
-      imagePullPolicy: IfNotPresent
+    - name: pythonappcontainer
+      image: tuuobit/pythonapp:latest # replace with your image name
       stdin: true          # allows interactive input
       tty: true            # enables an interactive terminal
-      command: ["python", "app.py"]
