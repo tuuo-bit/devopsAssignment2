@@ -21,6 +21,6 @@ with open( 'word_list.txt', 'r') as file:
 		centre, rest = input( 'Enter space separated centre letter and the rest: ').split(' ')
 		inst = spellathon( file, rest, centre)
 		inst.generate_words()
-		print( f"	~Generated Possible Solutions")
+		print( "	~Generated Possible Solutions")
 		l,n = map( int, input( 'Enter which length of words you want to see and how many, space separated: ').split(' '))
 		print( f"	~Solution: { inst.give( l, n)}")
